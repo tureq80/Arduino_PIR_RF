@@ -8,13 +8,12 @@ int ledPin = 13;                // choose the pin for the LED
 int inputPin = 2;               // choose the input pin (for PIR sensor)
 int pirState = LOW;             // we start, assuming no motion detected
 int val = 0;                    // variable for reading the pin status
-int x = 1;
  
 void setup() {
   pinMode(ledPin, OUTPUT);      // declare LED as output
   pinMode(inputPin, INPUT);     // declare sensor as input
   
-  mySwitch.enableTransmit(10);
+  mySwitch.enableTransmit(10);  // declare PIN RF modul
  
   Serial.begin(57600);
 }
